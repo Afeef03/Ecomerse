@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { urlFor } from '../lib/client';
+import { urlForImage } from '../sanity/lib/image';
 
 const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image } }) => {
   return (
@@ -23,7 +23,7 @@ const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTi
         </div>
 
         <img 
-          src={urlFor(image)} className="footer-banner-image"
+          src={urlForImage(image)} className="footer-banner-image"
         />
       </div>
     </div>
